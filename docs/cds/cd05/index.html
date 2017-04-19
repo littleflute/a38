@@ -1,12 +1,9 @@
-
-
-
 <!DOCTYPE html> 
 <html> 
 <body>
-   <a href="../../../">Home</a>-><a href="../../">docs</a>-><a href="../">cds</a>->cd05
+   <a href="../../../">Home</a>－〉<a href="../../">docs</a>－〉<a href="../">cds</a>－〉cd05
   <br>
-V1.7.8
+V1.8.9
 <br>
 <button onclick="play(1)" type="button">1</button>-
 <button onclick="play(2)" type="button">2</button>-
@@ -21,15 +18,14 @@ V1.7.8
 <br>
 
 <Audio id="myVideo" controls autoplay>
-  <source id="mp4_src" src="https://littleflute.github.io/a38/docs/cds/cd05/01 1.mp3" type="video/mp4"> 
+  <source id="mp4_src" src="https://littleflute.github.io/a38/docs/cds/cd04/01 Lecture 5.01.mp3" type="video/mp4"> 
   Your browser does not support HTML5 video.
 </Audio>
 
 <script> 
 var vid = document.getElementById("myVideo");
-
 function play(i) {
-    var s = "https://littleflute.github.io/a38/docs/cds/cd05/0" + i + " " + i + ".mp3"; 
+    var s = "https://littleflute.github.io/a38/docs/cds/cd04/0" + i + " Lecture 5.0.mp3" + i + ".mp3"; 
     vid.src = s;
     vid.load();
 } 
@@ -37,7 +33,6 @@ function play(i) {
  <p id="demo"></p>
 
 <script>
-
 var xmlhttp = new XMLHttpRequest();
 xmlhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
@@ -45,12 +40,11 @@ xmlhttp.onreadystatechange = function() {
         document.getElementById("demo").innerHTML = myObj.name;
     }
 };
-xmlhttp.open("GET", "https://littleflute.github.io/a38/docs/cds/cd02/d.txt", true);
+xmlhttp.open("GET", "https://littleflute.github.io/a38/docs/cds/cd05/d.txt", true);
 xmlhttp.send();
-
 </script>
 
-<p>cd01 MP3 ????: <a href="d.txt" target="_blank">d.txt</a></p>
+<p>cd01 MP3 文件列表: <a href="d.txt" target="_blank">d.txt</a></p>
 
 </body> 
 </html>
